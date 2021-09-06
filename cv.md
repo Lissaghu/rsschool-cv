@@ -45,3 +45,14 @@ Ever since childhood, I knew that my life would be connected with computers, but
   alert( sumInput() );
 `
 * **My examples layout:** http://h91109ci.beget.tech/Anisimova/
+
+## Courses:
+
+* HTML Academy
+* JavaScript directory https://learn.javascript.ru/ (in progress)
+* RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
+
+## Languages:
+
+* **Russian** - Native
+* **English** - A2 (school grade and university grade was five))))
