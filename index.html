@@ -11,25 +11,109 @@
 <body>
     <!-- Header start -->
     <header class="header">
-        <div class="wrapper">  
-            <div class="header-wrapper">
-                <div class="header-background">
-                    <img src="./img/header-background.jpg" alt="#">
+        <div class="header-wrapper">
+            <div class="header-background">
+                <img src="./img/header-background.jpg" alt="background-pic">
+            </div>
+            <div class="header-main">
+                <div class="header-main-picture">
+                    <img src="./img/avatar.jpg" alt="myAvatar">
                 </div>
-                <div class="header-main">
-                    <div class="header-main-picture">
-                        <img src="" alt="#">
-                    </div>
-                    <div class="header-main-title">
-                        <h1>Anton Dogadin</h1>
-                        <p>Junior Frontend developer</p>
-                    </div>
+                <div class="header-main-title">
+                    <h1>Anton Dogadin</h1>                        <p>Junior Frontend developer</p>
                 </div>
             </div>
-        </div>     
+        </div>  
     </header>
-
     <!-- Header end -->
+
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="main-background"></div>
+            <div class="main-information">
+                <article class="main-section1">
+                    <h2>Contact information:</h2>
+                    <section>
+                        <ul>
+                            <li>Phone: 8-911-092-52-44</li>
+                            <li>E-mail: dogadin00@gmail.com</li>
+                            <li>Telegram: @Lissaghu</li>
+                            <li>GitHub: <a href="https://github.com/Lissaghu">Lissaghu</a></li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="main-section2">
+                    <h2>About me:</h2>
+                    <section>
+                        <p>
+                        Ever since childhood, I knew that my life would be connected with computers, 
+                        but I did not know how exactly. Quite a long time ago I had an interest in 
+                        programming. I looked closely and chose JavaScript, because I can immediately 
+                        see the result of my work - which I am incredibly admired. I studied layout and 
+                        practiced on layouts. I am currently studying JavaScript. I have excellent 
+                        communication and teamwork skills. I quickly find a solution in stressful 
+                        situations. Calm and reasonable, but with a great sense of humor and charisma.
+                        </p>
+                    </section>
+                </article>
+                <article class="main-section3">
+                    <h2>Skills:</h2>
+                    <section>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS / SASS</li>
+                            <li>JavaScript (Basic)</li>
+                            <li>Git / GitHub</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="main-section4">
+                    <h2>Code examples:</h2>
+                    <section>
+                        <pre><code>
+                        function sumInput() {
+                            let numbers = [];
+                            while (true) {
+                            let value = prompt("Enter the number", 0);
+                            // Stop entering?
+                            if (value === "" || value === null || !isFinite(value)) break;                     
+                            numbers.push(+value);
+                            }                      
+                            let sum = 0;
+                            for (let number of numbers) {
+                            sum += number;
+                            }
+                            return sum;
+                        }
+                        alert( sumInput() );
+                        </code></pre>
+                        <p>My examples layout: <a href="http://h91109ci.beget.tech/Anisimova/ ">Anisimova</a></p>
+                    </section>
+                </article>
+                <article class="main-section5">
+                    <h2>Courses and education:</h2>
+                    <section>
+                        <ul>
+                            <li>HTML Academy</li>
+                            <li><a href="https://learn.javascript.ru/">JavaScript directory</a> (in progress)</li>
+                            <li>RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
+                            <li>College at Lobachevsky State University of Nizhny Novgorod<br> National Research University - secondary vocational education<br> "Sales Manager" (2013 - 2017)</li>
+                            <li>The S. M. Budyonny Military Academy of the Signal Corps - <br>incomplete higher education "commutation of communication<br> systems for special purposes" (2017 - 2021)</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="main-section6">
+                    <h2>Languages:</h2>
+                    <ul>
+                        <li>Russian: - Native</li>
+                        <li>English: - A2 (school grade and university grade was five:))</li>
+                    </ul>
+                </article>
+            </div>    
+        </div>
+        
+    </main>
+
     
 </body>
 </html>

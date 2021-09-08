@@ -5,6 +5,10 @@ body {
     font-weight: normal;
     color: black;
     line-height: 24px;
+    max-width: 1164px;
+    width: 100%;
+    margin: 0 auto; 
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5)
 }
 
 h1, h2 {
@@ -15,10 +19,10 @@ h1 {
     font-size: 42px;
 }
 
-.wrapper {
-    max-width: 1164px;
-    width: 100%;
-    margin: 0 auto;
+/* Header style start */
+
+.header-wrapper {
+    margin-top: 30px;  
 }
 
 .header-main {
@@ -30,3 +34,37 @@ h1 {
     font-size: 24px;
     letter-spacing: 2px;
 }
+
+.header-main-title {
+    margin-right: 270px;
+}
+
+.header-main-picture {
+    margin-top: -168px;
+}
+
+.header-main-picture img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+}
+
+/* Header style end */
+
+/* Main style start */
+
+.main-wrapper {
+    margin-top: -20px;
+    background-color: #e4e4e4;
+}
+
+.main-background {
+    
+}
+
+.main-section1 {
+    
+}
+
+
+/* Main style end */
