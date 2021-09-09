@@ -26,6 +26,7 @@ a {
 }
 
 pre {
+    background-color: rgb(248, 248, 248);
     margin: 0;
 }
 
@@ -96,6 +97,11 @@ pre {
     list-style-type: none;  
 }
 
+.main-section-link:hover, .main-section-link:active, .main-section-link:focus {
+    opacity: .5;
+    border-bottom: 1px solid black;
+}
+
 .section-left {
     margin-left: 30px;
 }
@@ -114,6 +120,11 @@ pre {
 
 .main-section4 p {
     margin: 0;
+}
+
+.main-section4-link:hover, .main-section4-link:active, .main-section4-link:focus {
+    opacity: .5;
+    border-bottom: 1px solid black;
 }
 
 .section-right {
@@ -151,6 +162,10 @@ pre {
 .footer-wrapper a {
     height: 40px;
     margin-top: 7px;
+}
+
+.footer-wrapper a:focus, .footer-wrapper a:hover, .footer-wrapper a:active {
+    opacity: .6;
 }
 
 .footer-wrapper-Git {
