@@ -8,7 +8,8 @@ body {
     max-width: 1164px;
     width: 100%;
     margin: 0 auto; 
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 h1, h2 {
@@ -19,10 +20,22 @@ h1 {
     font-size: 42px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+pre {
+    margin: 0;
+}
+
+
+
 /* Header style start */
 
 .header-wrapper {
     margin-top: 30px;  
+    background-color: #e4e4e4;
 }
 
 .header-main {
@@ -37,6 +50,8 @@ h1 {
 
 .header-main-title {
     margin-right: 270px;
+    position: relative;
+    z-index: 3;
 }
 
 .header-main-picture {
@@ -54,17 +69,94 @@ h1 {
 /* Main style start */
 
 .main-wrapper {
-    margin-top: -20px;
+    margin-top: -25px;
     background-color: #e4e4e4;
+    
 }
 
 .main-background {
-    
+    position: absolute;
+    top: 202px;
+    right: 0;
+    width: 670px;
+    height: 1125px;
+    background-color: white;
 }
 
-.main-section1 {
-    
+.main-information {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: 500px 650px;
+    grid-template-rows: auto;
+    position: relative;
+    z-index: 3;
 }
 
+.main-section1 section ul li {
+    list-style-type: none;  
+}
+
+.section-left {
+    margin-left: 30px;
+}
+
+.section-left ul {
+    padding-left: 20px;
+}
+
+.main-section3 {
+    margin-top: -60px;
+}
+
+.main-section4 h2 {
+    margin-bottom: 0;
+}
+
+.main-section4 p {
+    margin: 0;
+}
+
+.section-right {
+    margin: 0 30px;
+}
+
+.main-section5 {
+    margin-top: -350px;
+}
+
+.main-section6 {
+    position: relative;
+    left: -500px;
+    bottom: 40px;
+}
 
 /* Main style end */
+
+/* Footer style start */
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffb000;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 30px;
+}
+
+.footer-wrapper-logo {
+    height: 40px;
+    width: 80px;
+   
+}
+
+.footer-wrapper a {
+    height: 40px;
+    margin-top: 7px;
+}
+
+.footer-wrapper-Git {
+    height: 40px;
+    margin-top: 1px;
+}
+
+
+/* Footer style end */

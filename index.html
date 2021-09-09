@@ -20,29 +20,31 @@
                     <img src="./img/avatar.jpg" alt="myAvatar">
                 </div>
                 <div class="header-main-title">
-                    <h1>Anton Dogadin</h1>                        <p>Junior Frontend developer</p>
+                    <h1>Anton Dogadin</h1>
+                    <p>Junior Frontend developer</p>
                 </div>
             </div>
         </div>  
     </header>
     <!-- Header end -->
 
+    <!-- Main start -->
     <main class="main">
         <div class="main-wrapper">
             <div class="main-background"></div>
             <div class="main-information">
-                <article class="main-section1">
+                <article class="main-section1 section-left">
                     <h2>Contact information:</h2>
                     <section>
                         <ul>
-                            <li>Phone: 8-911-092-52-44</li>
-                            <li>E-mail: dogadin00@gmail.com</li>
-                            <li>Telegram: @Lissaghu</li>
-                            <li>GitHub: <a href="https://github.com/Lissaghu">Lissaghu</a></li>
+                            <li><b>Phone:</b> 8-911-092-52-44</li>
+                            <li><b>E-mail:</b> dogadin00@gmail.com</li>
+                            <li><b>Telegram:</b> @Lissaghu</li>
+                            <li><b>GitHub:</b> <a href="https://github.com/Lissaghu">Lissaghu</a></li>
                         </ul>
                     </section>
                 </article>
-                <article class="main-section2">
+                <article class="main-section2 section-right">
                     <h2>About me:</h2>
                     <section>
                         <p>
@@ -56,7 +58,7 @@
                         </p>
                     </section>
                 </article>
-                <article class="main-section3">
+                <article class="main-section3 section-left">
                     <h2>Skills:</h2>
                     <section>
                         <ul>
@@ -67,52 +69,62 @@
                         </ul>
                     </section>
                 </article>
-                <article class="main-section4">
+                <article class="main-section4 section-right">
                     <h2>Code examples:</h2>
                     <section>
                         <pre><code>
-                        function sumInput() {
-                            let numbers = [];
-                            while (true) {
-                            let value = prompt("Enter the number", 0);
-                            // Stop entering?
-                            if (value === "" || value === null || !isFinite(value)) break;                     
-                            numbers.push(+value);
-                            }                      
-                            let sum = 0;
-                            for (let number of numbers) {
-                            sum += number;
-                            }
-                            return sum;
-                        }
-                        alert( sumInput() );
+    function sumInput() {
+        let numbers = [];
+        while (true) {
+        let value = prompt("Enter the number", 0);
+        // Stop entering?
+        if (value === "" || value === null || !isFinite(value)) break;                     
+        numbers.push(+value);
+        }                      
+        let sum = 0;
+        for (let number of numbers) {
+        sum += number;
+        }
+        return sum;
+    }
+    alert( sumInput() );                        
                         </code></pre>
-                        <p>My examples layout: <a href="http://h91109ci.beget.tech/Anisimova/ ">Anisimova</a></p>
+                        <p><b>My examples layout:</b> <a href="http://h91109ci.beget.tech/Anisimova/ ">Anisimova</a></p>
                     </section>
                 </article>
-                <article class="main-section5">
+                <article class="main-section5 section-left">
                     <h2>Courses and education:</h2>
                     <section>
                         <ul>
-                            <li>HTML Academy</li>
-                            <li><a href="https://learn.javascript.ru/">JavaScript directory</a> (in progress)</li>
-                            <li>RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
-                            <li>College at Lobachevsky State University of Nizhny Novgorod<br> National Research University - secondary vocational education<br> "Sales Manager" (2013 - 2017)</li>
-                            <li>The S. M. Budyonny Military Academy of the Signal Corps - <br>incomplete higher education "commutation of communication<br> systems for special purposes" (2017 - 2021)</li>
+                            <li><b>HTML Academy</b></li>
+                            <li><b>JavaScript</b> directory<a href="https://learn.javascript.ru/"> learn.javascript.ru</a></li>
+                            <li><b>RS Schools</b> course «JavaScript/Front-end. Stage 1»</li>
+                            <li><b>College at Lobachevsky State University of Nizhny<br> Novgorod National Research University</b> - secondary<br> vocational education "Sales Manager" (2013 - 2017)</li>
+                            <li><b>The S.M.Budyonny Military Communications Academy</b> - <br>incomplete higher education "commutation of<br> communication systems for special purposes" (2017 - 2021)</li>
                         </ul>
                     </section>
                 </article>
-                <article class="main-section6">
+                <article class="main-section6 section-right">
                     <h2>Languages:</h2>
                     <ul>
-                        <li>Russian: - Native</li>
-                        <li>English: - A2 (school grade and university grade was five:))</li>
+                        <li><b>Russian:</b> - Native</li>
+                        <li><b>English:</b> - A2 (school and university grade was five:))</li>
                     </ul>
                 </article>
             </div>    
-        </div>
-        
+        </div>   
     </main>
+    <!-- Main end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <a href="https://rs.school/js/"><img src="./img/svg/rs_school_js.svg" alt="LogoRSSchool" class="footer-wrapper-logo"></a>
+            <p>© 2021 by Anton Dogadin</p>
+            <a href="https://github.com/Lissaghu"><img src="./img/GitHub-Mark-64px.png" alt="LogoGitHub" class="footer-wrapper-Git"></a>
+        </div>
+    </footer>
+    <!-- Footer end -->
 
     
 </body>
