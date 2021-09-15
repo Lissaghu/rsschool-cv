@@ -76,6 +76,10 @@ a {
     list-style-type: none;
 }
 
+.header-list li {
+    display: none;
+}
+
 .header-bg-hamb {
     width: 1164px;
     height: 100px;
@@ -351,11 +355,6 @@ a {
         opacity: none; 
     }
 
-
-    .menu_open .hamb {
-      
-    }
-
     .menu_open .hamb span {
         background-color: rgb(94, 94, 94);
     }
@@ -380,10 +379,15 @@ a {
         left: 0;
         z-index: 10;
         background-color: #F9F6F0;
-        transition: all .3s ease-in-out; 
+        transition: all .3s ease-in-out;
+    }
+
+    .header-list li {
+        display: block;
     }
 
     .menu_open .header-list {
+        display: block;
         padding-top: 5px;
         top: -30px;  
     }
