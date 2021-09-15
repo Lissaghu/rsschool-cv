@@ -473,6 +473,57 @@ a {
 
 @media screen and (max-width: 419px){
 
+    .header-bg-hamb {
+        max-width: 320px;
+        height: 60px;
+        background: url('/img/bg-hamb.png');
+        position: fixed;
+        top: 10px;
+        z-index: 10;
+        opacity: 1;
+    }
+
+    .hamb {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 11; 
+        opacity: none; 
+    }
+
+    .menu_open .hamb span {
+        background-color: rgb(94, 94, 94);
+    }
+
+    .menu_open .overlay {
+        transform: translateX(0%);
+        opacity: 0.6;
+        pointer-events: all; 
+    }
+
+    .menu_open .header {
+        background-color: #737373;
+        transition: all .3s ease-in-out;
+    }
+
+    .header-list {
+        display: block;
+        position: absolute;
+        width: 280px;
+        height: 150px;
+        top: -300%;
+        left: 0;
+        z-index: 10;
+        background-color: #F9F6F0;
+        transition: all .3s ease-in-out; 
+    }
+
+    .menu_open .header-list {
+        padding-top: 5px;
+        top: -30px;  
+    }
+
     body {
         max-width: 320px;
     }
