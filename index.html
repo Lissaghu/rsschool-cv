@@ -6,14 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anton Dogadin - CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/equilibrium-light.min.css">
 </head>
 <body>
     <!-- Header start -->
     <header class="header">
         <div class="header-wrapper">
+            <!-- Hamburger menu start -->
+            
+            <div class="header-bg-hamb">
+                <div class="hamb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+            
+            <nav class="header-hamb-body">
+                <ul class="header-list">
+                    <li>
+                        <a class="header-item js-scroll" href="#About-me">About me</a>
+                     </li>
+                    <li>
+                        <a class="header-item js-scroll" href="#Contact-information">Contact information</a>
+                     </li>
+                    <li>
+                        <a class="header-item js-scroll" href="#Skills">Skills</a>
+                     </li>
+                    <li>
+                        <a class="header-item js-scroll" href="#Code-examples">Code examples</a>
+                     </li>
+                    <li>
+                        <a class="header-item js-scroll" href="#education">Courses and education</a>
+                     </li>
+                    <li>
+                        <a class="header-item js-scroll" href="#lenguages">Languages</a>
+                     </li>
+                </ul>
+            </nav>
+            </div>
+            <!-- Hamburger menu end -->
             <div class="header-background">
-                <img src="./img/header-background.jpg" alt="background-pic">
+                <img src="./img/header-bg.jpg" alt="background-pic">
             </div>
             <div class="header-main">
                 <div class="header-main-picture">
@@ -33,7 +69,7 @@
         <div class="main-wrapper">
             <div class="main-background"></div>
             <div class="main-information">
-                <article class="main-section1 section-left">
+                <article class="main-section1 section-left" id="Contact-information">
                     <h2>Contact information:</h2>                 
                         <ul>
                             <li><b>Phone:</b> 8-911-092-52-44</li>
@@ -42,10 +78,10 @@
                             <li><b>GitHub:</b> <a href="https://github.com/Lissaghu" target="_blank" class="main-section-link">Lissaghu</a></li>
                         </ul>    
                 </article>
-                <article class="main-section2 section-right">
+                <article class="main-section2 section-right" id="About-me">
                     <h2>About me:</h2>
                         <p>
-                        Ever since childhood, I knew that my life would be connected with computers, 
+                        Hello, i'm Anton. I'm 23 years old. Ever since childhood, I knew that my life would be connected with computers, 
                         but I did not know how exactly. Quite a long time ago I had an interest in 
                         programming. I looked closely and chose JavaScript, because I can immediately 
                         see the result of my work - which I am incredibly admired. I studied layout and 
@@ -54,7 +90,7 @@
                         situations. Calm and reasonable, but with a great sense of humor and charisma.
                         </p>
                 </article>
-                <article class="main-section3 section-left">
+                <article class="main-section3 section-left" id="Skills">
                     <h2>Skills:</h2>
                         <ul>
                             <li>HTML</li>
@@ -63,28 +99,31 @@
                             <li>Git / GitHub</li>
                         </ul>
                 </article>
-                <article class="main-section4 section-right">
+                <article class="main-section4 section-right" id="Code-examples">
                     <h2>Code examples:</h2>
-                        <pre><code>
-    function sumInput() {
-        let numbers = [];
-        while (true) {
-        let value = prompt("Enter the number", 0);
-        // Stop entering?
-        if (value === "" || value === null || !isFinite(value)) break;                     
-        numbers.push(+value);
-        }                      
-        let sum = 0;
-        for (let number of numbers) {
-        sum += number;
-        }
-        return sum;
+                    <pre><code>
+function getParticipants(handshakes){
+    if (handshakes === 0){
+        return 1;
     }
-    alert( sumInput() );                        
+    let people = 0;
+    let i = 0;
+    while (i < handshakes) {
+        i += people;
+        people++;
+    }
+    return people;
+    }                       
                         </code></pre>
-                        <p><b>My examples layout:</b> <a href="http://h91109ci.beget.tech/Anisimova/" target="_blank" class="main-section4-link">Anisimova</a></p>
+                        <div class="main-section4-grid">
+                            <h4><b>My examples layout:</b></h4>                            
+                            <div class="main-section4-pic">
+                                <a href="http://h91109ci.beget.tech/Anisimova/" target="_blank" class="main-section4-link"><img src="./img/Anisimova.jpg" alt="Anisimova"></a>
+                            </div> 
+                            <p class="main-section4-text">When creating this site, I used technologies such as: HTML, CSS, JS. Used the library 'Slick.js' to create a slider.</p>
+                        </div>
                 </article>
-                <article class="main-section5 section-left">
+                <article class="main-section5 section-left" id="education">
                     <h2>Courses and education:</h2>
                         <ul>
                             <li><b>HTML Academy</b></li>
@@ -94,14 +133,15 @@
                             <li><b>The S.M.Budyonny Military Communications Academy</b> - <br>incomplete higher education "commutation of<br> communication systems for special purposes" (2017 - 2021)</li>
                         </ul>
                 </article>
-                <article class="main-section6 section-right">
+                <article class="main-section6 section-right" id="lenguages">
                     <h2>Languages:</h2>
                     <ul>
                         <li><b>Russian:</b> - Native</li>
                         <li><b>English:</b> - A2 (school and university grade was five:))</li>
                     </ul>
-                </article>
-            </div>    
+                </article>  
+            </div>  
+           
         </div>   
     </main>
     <!-- Main end -->
@@ -115,7 +155,10 @@
         </div>
     </footer>
     <!-- Footer end -->
+    <div class="overlay"></div>
 
-    
+    <script src="./script/script.js"></script>
+    <script src="./script/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
